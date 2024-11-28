@@ -57,7 +57,7 @@
 
         async renderRoiCalculator() {
             try {
-                const { default: RoiCalculator } = await import("/js/RoiCalculator.js");
+                const { default: RoiCalculator } = await import(window.location.href + "js/RoiCalculator.js");
                 const React = global.React;
                 const ReactDOM = global.ReactDOM;
 
