@@ -15,8 +15,8 @@ export default function StyleRegistryProvider({ children }) {
 
         return (
             <>
-                <script src={scriptEmbedPath} />
-                <script dangerouslySetInnerHTML={{__html: scriptInitCode }} />
+                <script defer src={scriptEmbedPath} crossOrigin="anonymous" />
+                <script async dangerouslySetInnerHTML={{__html: scriptInitCode }} crossOrigin="anonymous" />
             </>
         );
     });
